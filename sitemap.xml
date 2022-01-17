@@ -2,7 +2,7 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
 <url>
   <loc>tsthght.github.io/</loc>
-  <lastmod>2022-01-17T20:02:44+08:00</lastmod>
+  <lastmod>2022-01-17T21:30:02+08:00</lastmod>
 </url>
 
 <url>
@@ -11,6 +11,10 @@
 </url>
 
 
+
+<url>
+  <loc>tsthght.github.io/paper-reading.html</loc>
+</url>
 
 
 </urlset>

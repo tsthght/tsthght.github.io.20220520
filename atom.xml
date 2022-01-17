@@ -1,17 +1,16 @@
 <?xml version="1.0" encoding="utf-8"?>
 <feed xmlns="http://www.w3.org/2005/Atom">
 
-  <title><![CDATA[tsthght]]></title>
+  <title><![CDATA[紫气东来]]></title>
   <link href="tsthght.github.io/atom.xml" rel="self"/>
   <link href="tsthght.github.io/"/>
-  <updated>2022-01-17T17:40:40+08:00</updated>
+  <updated>2022-01-17T21:29:57+08:00</updated>
   <id>tsthght.github.io/</id>
   <author>
     <name><![CDATA[]]></name>
     
   </author>
-  <generator uri="http://www.mweb.im">MWeb</generator>
-
+  <generator uri="http://www.mweb.im/">MWeb</generator>
   
   <entry>
     <title type="html"><![CDATA[论文阅读《Using Lightweight Formal Methods to Validate a Key-Value Storage Node in Amazon S3》]]></title>

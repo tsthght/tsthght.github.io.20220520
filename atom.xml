@@ -4,13 +4,23 @@
   <title><![CDATA[紫气东来]]></title>
   <link href="tsthght.github.io/atom.xml" rel="self"/>
   <link href="tsthght.github.io/"/>
-  <updated>2022-01-18T16:58:46+08:00</updated>
+  <updated>2022-01-19T17:12:16+08:00</updated>
   <id>tsthght.github.io/</id>
   <author>
     <name><![CDATA[]]></name>
     
   </author>
   <generator uri="http://www.mweb.im/">MWeb</generator>
+  
+  <entry>
+    <title type="html"><![CDATA[论文阅读《DBLog- A Watermark Based Change-Data-Capture Framework》]]></title>
+    <link href="tsthght.github.io/16425834186543.html"/>
+    <updated>2022-01-19T17:10:18+08:00</updated>
+    <id>tsthght.github.io/16425834186543.html</id>
+    <content type="html"><![CDATA[
+
+]]></content>
+  </entry>
   
   <entry>
     <title type="html"><![CDATA[论文阅读《Efficiently Compiling Efficient Query Plans for Modern Hardware》]]></title>

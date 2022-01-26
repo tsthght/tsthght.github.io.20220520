@@ -5,7 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>
     
-  未完成 - 紫气东来
+  2021 TiDB Hackathon 观后感 - 紫气东来
   
   </title>
   
@@ -106,7 +106,7 @@
       <div class="markdown-body article-wrap">
        <div class="article">
           
-          <h1>未完成</h1>
+          <h1>2021 TiDB Hackathon 观后感</h1>
      
         <div class="read-more clearfix">
           <span class="date">2022/01/25</span>
@@ -127,10 +127,37 @@
 
       <div class="article-content">
       <h3><a id="1%E9%99%8D%E6%88%90%E6%9C%AC" class="anchor" aria-hidden="true"><span class="octicon octicon-link"></span></a>1 降成本</h3>
-<ul>
-<li>项目：冷热数据分层存储@He3</li>
-</ul>
+<p>TiDB这种分布式数据库系统，降低存储成本主要有以下几种方式：</p>
+<ol>
+<li>降低副本数。可以类似阿里X-DB模式，2副本+log副本；也可以类似S3模式，使用EC纠删码；</li>
+<li>减少写放大。可以将LSM-tree层数变小；</li>
+<li>压缩存储；</li>
+<li>分层存储。</li>
+</ol>
+<h4><a id="%E9%A1%B9%E7%9B%AE%EF%BC%9A%E5%86%B7%E7%83%AD%E6%95%B0%E6%8D%AE%E5%88%86%E5%B1%82%E5%AD%98%E5%82%A8he3%E5%86%A0%E5%86%9B" class="anchor" aria-hidden="true"><span class="octicon octicon-link"></span></a>项目：冷热数据分层存储@He3#冠军</h4>
+<p>TiDB其中一个重要特性是支持海量数据存储，实际应用的场景主要有：归档数据存储或归档数据库存储伴随少量历史数据查询。</p>
+<p>这种只对存储容量有要求，对性能要求不高的场景，就可以通过</p>
 <h3><a id="2%E6%8F%90%E6%95%88%E7%8E%87" class="anchor" aria-hidden="true"><span class="octicon octicon-link"></span></a>2 提效率</h3>
+<h4><a id="%E9%A1%B9%E7%9B%AE%EF%BC%9Atiexec-fr" class="anchor" aria-hidden="true"><span class="octicon octicon-link"></span></a>项目：TiExec@FR</h4>
+<h4><a id="%E9%A1%B9%E7%9B%AE%EF%BC%9Aincremental-analyze-table-onelastcode" class="anchor" aria-hidden="true"><span class="octicon octicon-link"></span></a>项目：Incremental Analyze Table@OneLastCode</h4>
+<h4><a id="%E9%A1%B9%E7%9B%AE%EF%BC%9Atimultiple%E8%B1%AB%E5%9B%AD" class="anchor" aria-hidden="true"><span class="octicon octicon-link"></span></a>项目：TiMultiple@豫园</h4>
+<h4><a id="%E9%A1%B9%E7%9B%AE%EF%BC%9Atpc-tikv-tpc" class="anchor" aria-hidden="true"><span class="octicon octicon-link"></span></a>项目：TPC TiKV@TPC</h4>
+<h4><a id="%E9%A1%B9%E7%9B%AE%EF%BC%9A%E9%BB%91%E9%A9%AC%E8%AD%A6%E9%95%BF%E9%BB%91%E9%A9%AC%E8%AD%A6%E9%95%BF" class="anchor" aria-hidden="true"><span class="octicon octicon-link"></span></a>项目：黑马警长@黑马警长</h4>
+<h3><a id="3%E5%BB%BA%E7%94%9F%E6%80%81" class="anchor" aria-hidden="true"><span class="octicon octicon-link"></span></a>3 建生态</h3>
+<h4><a id="%E9%A1%B9%E7%9B%AE%EF%BC%9Atitravel-ti2sky" class="anchor" aria-hidden="true"><span class="octicon octicon-link"></span></a>项目：TiTravel@Ti2Sky</h4>
+<h4><a id="%E9%A1%B9%E7%9B%AE%EF%BC%9Atimatch%E8%AF%AD%E6%B3%95%E5%AE%8C%E5%A4%87%E7%9A%84%E5%88%86%E5%B8%83%E5%BC%8F%E5%9B%BE%E6%95%B0%E6%8D%AE%E5%BA%93-timatch%E4%BA%9A%E5%86%9B" class="anchor" aria-hidden="true"><span class="octicon octicon-link"></span></a>项目：TiMatch-语法完备的分布式图数据库@TiMatch#亚军</h4>
+<h4><a id="%E9%A1%B9%E7%9B%AE%EF%BC%9A%E5%9F%BA%E4%BA%8Etidbtikv%E7%9A%84-oom-ai%E7%89%B9%E5%BE%81%E5%B9%B3%E5%8F%B0-oom-ai" class="anchor" aria-hidden="true"><span class="octicon octicon-link"></span></a>项目： 基于 TiDB/TiKV 的 oom.ai 特征平台@oom.ai</h4>
+<h4><a id="%E9%A1%B9%E7%9B%AE%EF%BC%9A%E8%AE%A9tidb%E5%9C%A8%E4%BA%91%E4%B8%8A%E6%99%BA%E8%83%BD%E7%9A%84%E8%AF%B4%E8%AF%9D-nbnative" class="anchor" aria-hidden="true"><span class="octicon octicon-link"></span></a>项目：让TiDB在云上智能的说话@NbNative</h4>
+<h4><a id="%E9%A1%B9%E7%9B%AE%EF%BC%9Atidb-flashback%E6%B8%A1%E6%B8%A1%E9%B8%9F%E5%A4%8D%E5%85%B4%E4%BC%9A" class="anchor" aria-hidden="true"><span class="octicon octicon-link"></span></a>项目：TiDB Flashback@渡渡鸟复兴会</h4>
+<h4><a id="%E9%A1%B9%E7%9B%AE%EF%BC%9Atenseigan-matrix" class="anchor" aria-hidden="true"><span class="octicon octicon-link"></span></a>项目：Tenseigan@Matrix</h4>
+<h4><a id="%E9%A1%B9%E7%9B%AE%EF%BC%9Atidb-visual-plan-tivp" class="anchor" aria-hidden="true"><span class="octicon octicon-link"></span></a>项目：TiDB Visual Plan@TiVP</h4>
+<h4><a id="%E9%A1%B9%E7%9B%AE%EF%BC%9Apcloud-pcloud%E4%BA%9A%E5%86%9B" class="anchor" aria-hidden="true"><span class="octicon octicon-link"></span></a>项目：pCloud@pCloud#亚军</h4>
+<h4><a id="%E9%A1%B9%E7%9B%AE%EF%BC%9Adeploy-tidb-on-cloud-bubbles" class="anchor" aria-hidden="true"><span class="octicon octicon-link"></span></a>项目：Deploy TiDB on Cloud@Bubbles</h4>
+<h4><a id="%E9%A1%B9%E7%9B%AE%EF%BC%9Adujiang-weir%E9%83%BD%E6%B1%9F%E5%A0%B0" class="anchor" aria-hidden="true"><span class="octicon octicon-link"></span></a>项目：Dujiang Weir@都江堰</h4>
+<h4><a id="%E9%A1%B9%E7%9B%AE%EF%BC%9Achaosmore-chaosmore" class="anchor" aria-hidden="true"><span class="octicon octicon-link"></span></a>项目：ChaosMore@ChaosMore</h4>
+<h4><a id="%E9%A1%B9%E7%9B%AE%EF%BC%9Atilaker%E4%B8%BA-tidb%E6%8F%92%E4%B8%8A%E5%85%A5%E6%B9%96%E7%9A%84%E7%BF%85%E8%86%80-tilaker%E4%BA%9A%E5%86%9B" class="anchor" aria-hidden="true"><span class="octicon octicon-link"></span></a>项目：TiLaker: 为 TIDB 插上入湖的翅膀@TiLaker#亚军</h4>
+<h4><a id="%E9%A1%B9%E7%9B%AE%EF%BC%9Acollie%E6%88%91%E4%BB%AC%E8%BF%99%E4%B9%88%E8%8F%9C%E8%AF%84%E5%A7%94%E4%B8%8D%E4%BC%9A%E7%94%9F%E6%B0%94%E5%90%A7" class="anchor" aria-hidden="true"><span class="octicon octicon-link"></span></a>项目：collie@我们这么菜评委不会生气吧</h4>
+<h4><a id="%E9%A1%B9%E7%9B%AE%EF%BC%9Ati-click-ti%E5%8F%AF%E7%AB%8B%E5%88%BB" class="anchor" aria-hidden="true"><span class="octicon octicon-link"></span></a>项目：Ti Click@Ti可立刻</h4>
 <h3><a id="%E5%8F%82%E8%80%83" class="anchor" aria-hidden="true"><span class="octicon octicon-link"></span></a>参考</h3>
 <p>[1] <a href="https://mp.weixin.qq.com/s/mJ4G-DOaUokeOduP-KaB4g">“爆到天际线” - TiDB 2021 Hackathon 决赛不负责任点评</a><br />
 [2] <a href="https://mp.weixin.qq.com/s/ar5GiZq9TAripuvwFwhjCA">极简实现TiDB冷热数据分层存储</a></p>
@@ -234,7 +261,7 @@
 		  
 		      
 			      <li class="post">
-			        <a href="16430792411429.html">未完成</a>
+			        <a href="16430792411429.html">2021 TiDB Hackathon 观后感</a>
 			      </li>
 		     
 		  
